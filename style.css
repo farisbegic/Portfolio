@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+}
+.scroll-black{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    animation: fadeIn ease 10s;
+}
+.scroll-black p{
+    font-size: 25px;
+    color: #101010;
+}
+.scroll-black a i{
+    color: #101010;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.scroll-white{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    animation: fadeIn ease 10s;
+}
+.scroll-white p{
+    font-size: 25px;
+    color: #ffff;
+}
+.scroll-white a i{
+    color: #ffff;
+    padding: 10px;
+    font-size: 25px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    height: 100vh;
+    background-color: #101010;
+    color: #ffff;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header .navbar h1{
+    font-weight: 400;
+}
+header .navbar nav a i{
+    color: #ffff;
+    font-size: 25px;
+    margin: 5px;
+}
+header .text h2{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    text-align: center;
+    animation: writing 3s steps(42);
+    overflow: hidden;
+    white-space: nowrap;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    height: 100vh;
+    background-color: #ffff;
+    color: #101010;
+}
+.about-me .about-inner{
+    display: flex;
+}
+.about-me .about-inner section{
+    width: 555px;
+    margin-top: 110px;
+}
+.about-me .about-inner section h2{
+    text-align: center;
+}
+.about-me .about-inner section p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    padding: 10px 0;
+}
+.my-works{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 100px 30px;
+    height: 100vh;
+    background-color: #101010;
+    color: #ffff;
+}
+.my-works .description{
+    text-align: center;
+}
+.my-works .description h2{
+    font-size: 30px;
+}
+.my-works .description p{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 200px;
+}
+.my-works .description hr{
+    width: 700px;
+    margin: 5px auto;
+}
+.my-works .works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-works .works .client{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.my-works .works .client a{
+    position: relative;
+    top: -80px;
+}
+.my-works .works .client a button{
+    font-family: Lato;
+    font-weight: 600;
+    color: #101010;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 7px;
+    width: 150px;
+    margin-left: 27px;
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+    height: 100vh;
+    background-color: #ffff;
+    color: #101010;
+}
+.contact h2{
+    font-size: 34px;
+}
+.contact p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.contact .contact-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.contact .contact-form form{
+    width: 540px;
+}
+.contact .contact-form form textarea, input, button{
+    font-family: Lato;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    resize: vertical;
+}
+.contact .contact-form form button{
+    background-color: #101010;
+    color: #ffff;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    padding: 30px 100px;
+}
+footer h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+footer nav a i{
+    color: #ffff;
+    font-size: 25px;
+    margin: 5px;
+}
+@keyframes writing {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 42ch;
+    }
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@media screen and (max-height: 750px) {
+    .about-me .about-inner img{
+        height: 650px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .about-me{
+        height: 110vh;
+    }
+    .about-me .about-inner img{
+        height: 500px;
+    }
+    .about-me .about-inner section{
+        width: 350px;
+        margin-top: 50px;
+    }
+    .about-me .about-inner section p{
+        font-size: 15px;
+    }
+    .my-works{
+        height: 180vh;
+    }
+    .my-works .works{
+        flex-direction: column;
+    }
+    .my-works .description p{
+        padding: 20px 100px;
+        font-size: 15px;
+    }
+    .my-works .works .client img{
+        width: 500px;
+        padding: 0;
+    }
+    .my-works .description hr{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 650px){
+    header{
+        padding: 30px 40px;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    header .text h2{
+        font-size: 23px;
+    }
+    .scroll-white p{
+        font-size: 17px;
+    }
+    .scroll-white a i{
+        font-size: 17px;
+    }
+    .scroll-black p{
+        font-size: 17px;
+    }
+    .scroll-black a i{
+        font-size: 17px;
+    }
+    header .navbar nav a i{
+        font-size: 20px;
+    }
+    .about-me .about-inner img{
+        display: none;
+    }
+    .about-me .about-inner section{
+        width: 350px;
+        margin-top: 0;
+    }
+    .about-me .about-inner section p{
+        font-size: 15px;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .my-works{
+        padding: 70px 40px 30px;
+        height: 180vh;
+    }
+    .my-works .description h2{
+        font-size: 23px;
+    }
+    .my-works .description p{
+        font-size: 16px;
+        padding: 20px 150px;
+    }
+    .my-works .description hr{
+        visibility: hidden;
+    }
+    .my-works .works{
+        flex-direction: column;
+    }
+    .my-works .works .client img{
+        width: 400px;
+    }
+    .my-works .works .client a{
+        top: -67px;
+        left: -11px;
+    }
+    .my-works .works .client a button{
+        width: 100px;
+        padding: 10px 10px;
+    }
+    .my-works .works .client a button i{
+        padding-right: 3px;
+    }
+    .contact .contact-inner h2{
+        font-size: 28px;
+    }
+    .contact .contact-inner p{
+        font-size: 16px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .contact .contact-form form{
+        width: 450px;
+    }
+    footer{
+        padding: 30px 40px;
+    }
+    footer h1{
+        font-size: 17px;
+    }
+    footer nav a i{
+        font-size: 20px;
+    }
+}
