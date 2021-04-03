@@ -1,2 +1,2 @@
 # farisbegic.github.io
-Published Web
+Portfolio Web Site built using HTML/CSS
